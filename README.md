@@ -1,3 +1,69 @@
+This is the application which is Shop Smart Mini
+
+🚀 Features:
+
+📦 Product listing
+
+🛒 Add/remove items from cart
+
+👤 Profile screen with avatar upload
+
+Library	Purpose & Why I Chose It
+
+React Native -	Core framework for building cross-platform apps with a single codebase.
+@reduxjs/toolkit -	Simplifies Redux setup and improves readability and maintainability with createSlice, createAsyncThunk.
+react-redux - 	Connects Redux state to React components efficiently.
+redux-persist	- Persists Redux state (like cart data and auth status) across app restarts.
+axios	- For clean and flexible HTTP requests with built-in interceptor support.
+@react-navigation/native	- Provides a declarative API for navigation and works well with stacks, tabs, and nested navigators.
+@react-navigation/native-stack	- Used for faster, native-stack-based navigation transitions.
+@react-navigation/bottom-tabs	- For clean bottom tab navigation, ideal for e-commerce app structure.
+@react-native-async-storage/async-storage	- For storing key user preferences and persisted login state.
+@react-native-google-signin/google-signin	- Enables easy integration of Google Sign-In for authentication.
+react-native-image-picker	- Allows users to pick and upload avatars or profile images.
+react-native-vector-icons	- Adds beautiful and consistent icons across the app.
+react-native-floating-label-input	- Provides a modern UI input field with a floating label, enhancing form UX.
+react-native-svg	- Enables custom SVG rendering for elements like icons and barcodes.
+
+
+📂 Folder Structure:
+
+src/
+├── components/         # Reusable components
+├── screens/            # Screen-level components (Home, Cart, Profile)
+├── store/              # Redux slices and configuration
+├── themes/             # Reusable colors
+├── navigation/         # Navigation configuration
+├── redux/slice/        # API & helpers
+└── App.tsx             # Entry point
+
+
+Architecture:
+
+1. Modular, feature-based structure for scalability.
+
+2. Redux Toolkit with createSlice and createAsyncThunk.
+
+3. Reusable Component
+
+
+✅ Completed Tasks:
+
+ - Product list with add/remove cart
+
+ - Product Details Screen
+
+ - Profile screen with editable fields and avatar upload
+
+ - Responsive UI for Android and iOS
+
+ - APK & IPA build
+
+ - Demo video and screenshots included
+
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
@@ -58,40 +124,5 @@ npm run ios
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
 
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
